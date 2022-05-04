@@ -171,9 +171,18 @@
 
     <main>
         <h2 class="separator" style="color: #888888; font-size: 16px; text-align: center">Sua seleção especial</h2>
-        <ul class="product-list">
-            <li class="product-list-item">
-                <img src="https://via.placeholder.com/150" alt="Produto" class="product-list-item__image">
+        <ul class="product-list container">
+            <li class="product-list-item" style="display: flex; gap: 1.2rem">
+                <img src="https://via.placeholder.com/150" alt="Imagem do produto" class="product-list-item__image">
+                <section class="product-list-item-info" style="display: flex; flex-direction: column;">
+                    <h3 class="product-list-item-info__title" style="color: #888888;">Nome do produto</h3>
+                    <div>
+                        <p class="product-list-item-info__old-price" style="color: #888888; font-size: 0.75rem">De: R$ 120,00</p>
+                        <p class="product-list-item-info__price" style="color: #888888; font-weight: bold">Por: R$ 100,00</p>
+                        <p class="product-list-item-info__discount" style="color: #888888; font-size: 0.75rem">ou 2x de R$ 50,00</p>
+                        <button class="product-list-item-info__button" style="width: 100%; background-color: #FFF; color: #888; text-align: center; height: 2rem">Comprar</button>
+                    </div>
+                </section>
             </li>
         </ul>
     </main>
